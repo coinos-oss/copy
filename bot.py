@@ -22,7 +22,7 @@ DRY_RUN = env("DRY_RUN", "true").lower() != "false"
 MAX_PER_RUN = int(env("MAX_PER_RUN", "25"))
 MAX_PER_DAY = int(env("MAX_PER_DAY", "500"))
 MIN_RC_PCT = float(env("MIN_RC_PCT", "5"))        # stop when RC mana falls below this %
-LOOKBACK_BLOCKS = int(env("LOOKBACK_BLOCKS", "1200"))   # first run: about 1 hour
+LOOKBACK_BLOCKS = int(env("LOOKBACK_BLOCKS", "1800"))   # first run: about 1 hour
 SCAN_BLOCKS_MAX = int(env("SCAN_BLOCKS_MAX", "3000"))   # per run (3 sec per block)
 QUEUE_MAX = int(env("QUEUE_MAX", "1000"))
 CREATE_OPS = {"account_create", "account_create_with_delegation", "create_claimed_account"}
