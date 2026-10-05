@@ -20,8 +20,8 @@ ACCOUNT = env("HIVE_ACCOUNT").strip().lstrip("@").lower()
 POSTING_KEY = env("HIVE_POSTING_KEY")
 DRY_RUN = env("DRY_RUN", "true").lower() != "false"
 MAX_PER_RUN = int(env("MAX_PER_RUN", "25"))
-MAX_PER_DAY = int(env("MAX_PER_DAY", "200"))
-MIN_RC_PCT = float(env("MIN_RC_PCT", "20"))        # stop when RC mana falls below this %
+MAX_PER_DAY = int(env("MAX_PER_DAY", "500"))
+MIN_RC_PCT = float(env("MIN_RC_PCT", "5"))        # stop when RC mana falls below this %
 LOOKBACK_BLOCKS = int(env("LOOKBACK_BLOCKS", "1200"))   # first run: about 1 hour
 SCAN_BLOCKS_MAX = int(env("SCAN_BLOCKS_MAX", "3000"))   # per run (3 sec per block)
 QUEUE_MAX = int(env("QUEUE_MAX", "1000"))
