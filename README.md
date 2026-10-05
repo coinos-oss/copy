@@ -1,1 +1,1 @@
-# copy
+# notes-sync
